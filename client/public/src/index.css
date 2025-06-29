@@ -1,0 +1,45 @@
+/* client/src/index.css */
+
+/* Tailwind CSS Directives */
+/* These three lines are absolutely essential for Tailwind to work. */
+@tailwind base;        /* Includes Tailwind's base styles, which normalize CSS and provide default styling. */
+@tailwind components;  /* Includes Tailwind's component classes (e.g., btn, card), if you define any. */
+@tailwind utilities;   /* Includes all of Tailwind's utility classes (e.g., flex, pt-4, text-red-500). */
+
+/* ------------------------------------------------------------------ */
+/* Global Custom Styles (Optional)                                  */
+/* You can add any custom CSS rules here that you want to apply      */
+/* globally to your application, or styles that are difficult to    */
+/* achieve purely with Tailwind utility classes.                    */
+/* ------------------------------------------------------------------ */
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; /* Using a modern font stack */
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; /* Improves text rendering on macOS/iOS */
+  -moz-osx-font-smoothing: grayscale;  /* Improves text rendering on macOS/iOS */
+  background-color: #f3f4f6; /* A very light gray background for the entire app */
+  color: #374151; /* A dark gray for default text color */
+}
+
+/* You might want to define some custom variables if needed, though Tailwind mostly handles this */
+:root {
+  --primary-color: #2563eb; /* Blue-600 equivalent */
+  --secondary-color: #10b981; /* Green-500 equivalent */
+  --text-color-light: #f9fafb;
+  --text-color-dark: #1f2937;
+}
+
+/* Example of a custom class if Tailwind's utilities aren't enough (rarely needed) */
+/* .custom-card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 0 0 4px rgba(37, 99, 235, 0.2);
+} */
+
+/* You can also define custom utility classes using @apply for reusability if necessary */
+/* .btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline;
+} */
+
+/* You can import custom fonts if desired. Make sure to link them in public/index.html or use @import */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
